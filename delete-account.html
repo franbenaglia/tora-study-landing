@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-title-suffix="Delete Account">Tora Study — Delete Account</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✡</text></svg>" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="./index.html" class="nav__logo">✡ Tora Study</a>
+      <div class="nav__links">
+        <a href="./index.html" data-i18n="nav.home">Home</a>
+        <a href="./privacy.html" data-i18n="nav.privacy">Privacy Policy</a>
+        <a href="./delete-account.html" data-i18n="nav.deleteAccount">Delete Account</a>
+        <div class="lang-switcher">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="es">ES</button>
+          <button class="lang-btn" data-lang="he">HE</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page hero -->
+  <div class="page-hero">
+    <h1 class="page-hero__title" data-i18n="delete.title">Delete Your Account</h1>
+    <p class="page-hero__sub" data-i18n="delete.subtitle">We're sorry to see you go. Here's how to permanently delete your account.</p>
+  </div>
+
+  <!-- Content -->
+  <div class="prose">
+
+    <!-- Method 1: in-app -->
+    <div class="method-card">
+      <div class="method-card__title">
+        <span class="badge">1</span>
+        <span data-i18n="delete.method1_title">Option 1 — Delete from the App (Instant)</span>
+      </div>
+      <ol class="steps">
+        <li data-i18n="delete.method1_step1">Open the Tora Study app.</li>
+        <li data-i18n="delete.method1_step2">Go to your profile or settings.</li>
+        <li data-i18n="delete.method1_step3" data-i18n-html>Tap <strong>Delete Account</strong>.</li>
+        <li data-i18n="delete.method1_step4">Confirm the deletion.</li>
+      </ol>
+      <div class="note" data-i18n="delete.method1_note">
+        Your account and all data will be permanently deleted immediately.
+      </div>
+    </div>
+
+    <!-- Method 2: email -->
+    <div class="method-card">
+      <div class="method-card__title">
+        <span class="badge">2</span>
+        <span data-i18n="delete.method2_title">Option 2 — Email Us</span>
+      </div>
+      <p>
+        <span data-i18n="delete.method2_text">If you cannot access the app, send an email to</span>
+        <a href="mailto:feedback@fab-apps.com" class="email-link" data-i18n-email>feedback@fab-apps.com</a>
+      </p>
+      <p data-i18n="delete.method2_subject" data-i18n-html>with the subject <strong>"Delete Account"</strong> from the email address associated with your account. We will process your request within 5 business days.</p>
+    </div>
+
+    <!-- What gets deleted -->
+    <h2 data-i18n="delete.deleted_title">What data is deleted</h2>
+    <ul class="checklist">
+      <li data-i18n="delete.deleted_account">Your email, name and profile picture</li>
+      <li data-i18n="delete.deleted_credits">Credit balance and transaction history</li>
+      <li data-i18n="delete.deleted_quiz">Quiz sessions and results</li>
+      <li data-i18n="delete.deleted_plans">Reading plans and notes</li>
+      <li data-i18n="delete.deleted_progress">Reading progress</li>
+    </ul>
+
+    <!-- What we retain -->
+    <h2 data-i18n="delete.retained_title">What we retain</h2>
+    <p data-i18n="delete.retained_text">
+      After deletion, your email is added to an anonymized blocklist to prevent abuse of the sign-up credit bonus. No other personal information is retained.
+    </p>
+
+    <!-- Need help -->
+    <h2 data-i18n="delete.contact_title">Need help?</h2>
+    <p>
+      <span data-i18n="delete.contact_text">For any questions about account deletion, write to us at</span>
+      <a href="mailto:feedback@fab-apps.com" data-i18n-email>feedback@fab-apps.com</a>.
+    </p>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__links">
+      <a href="./index.html" data-i18n="nav.home">Home</a>
+      <a href="./privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+      <a href="./delete-account.html" data-i18n="footer.delete">Delete Account</a>
+    </div>
+    <p data-i18n="footer.copyright">© 2026 FAB Apps. All rights reserved.</p>
+  </footer>
+
+  <script src="./js/i18n.js"></script>
+</body>
+</html>
