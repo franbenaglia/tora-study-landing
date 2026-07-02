@@ -17,29 +17,59 @@ const TRANSLATIONS = {
     },
     features: {
       title: 'Everything you need to study',
+      groupLibrary: '📚 The Library',
+      groupAI: '🤖 AI-Powered Study Tools',
       tanakh: {
-        title: 'Tanakh Reader',
-        desc: 'Read the complete Hebrew Bible in Hebrew (with nikud), English (JPS 1917) and Spanish. Access Rashi commentary verse by verse.',
+        title: 'Tanakh',
+        desc: 'The complete Hebrew Bible in Hebrew (with nikud), English (JPS 1917) and Spanish, with Rashi\'s classic commentary on every book.',
       },
       mishnah: {
         title: 'Mishnah',
-        desc: 'All 63 tractates in Hebrew and Spanish, with full-text and semantic search.',
+        desc: 'All 63 tractates in Hebrew, Spanish and English — including Pirkei Avot as its own featured section.',
       },
       talmud: {
         title: 'Babylonian Talmud',
-        desc: '28 tractates of the Bavli in Aramaic and Spanish, with searchable content (CC-BY-SA).',
+        desc: 'All 37 tractates of the Bavli, complete in Hebrew/Aramaic, Spanish and English, with Rashi\'s commentary alongside the text.',
       },
-      ai: {
-        title: 'AI Study Tools',
-        desc: 'Chat with an AI grounded in the text, generate chapter quizzes, and get instant summaries — powered by GPT-4o.',
+      tosefta: {
+        title: 'Tosefta',
+        desc: '61 tractates of this early tannaitic companion to the Mishnah, in Hebrew.',
       },
-      rashi: {
-        title: 'Rashi Commentary',
-        desc: 'Access the classic 11th-century commentary on the Torah, available in Hebrew and English.',
+      midrash: {
+        title: 'Midrash & Classic Commentaries',
+        desc: 'Midrash Rabbah, Sifrei, Midrash Tanchuma, Mekhilta and Sifra — centuries of rabbinic interpretation, in Hebrew.',
+      },
+      prayer: {
+        title: 'Prayer & Holidays',
+        desc: 'The Passover Haggadah and the weekday Siddur, ready to read and follow along.',
+      },
+      audio: {
+        title: 'Listen to Every Text',
+        desc: 'Text-to-speech in Hebrew, Spanish and English — play a single verse or an entire chapter hands-free.',
+      },
+      search: {
+        title: 'Search the Whole Library',
+        desc: 'Full-text and semantic search across the entire collection — find the passage you\'re thinking of, even if you don\'t remember the exact words.',
       },
       multilang: {
         title: 'Multilingual',
         desc: 'Interface available in Spanish, English and Hebrew. Texts in their original languages with translations.',
+      },
+      chat: {
+        title: 'AI Chat',
+        desc: 'Ask questions and chat with an AI grounded in the text — every answer cites real verses, never invented content.',
+      },
+      quiz: {
+        title: 'Auto-Generated Quizzes',
+        desc: 'Test your understanding with AI-generated quizzes for any chapter, tractate or daf, with a saved history of your results.',
+      },
+      summary: {
+        title: 'Instant Summaries',
+        desc: 'Get a clear AI-generated summary of any chapter in seconds.',
+      },
+      guides: {
+        title: 'Personalized Study Guides',
+        desc: 'Pick any topic and let AI build a multi-lesson study guide grounded in real sources — complete with a final quiz and certificate of completion.',
       },
     },
     principles: {
@@ -156,29 +186,59 @@ const TRANSLATIONS = {
     },
     features: {
       title: 'Todo lo que necesitás para estudiar',
+      groupLibrary: '📚 La Biblioteca',
+      groupAI: '🤖 Herramientas de estudio con IA',
       tanakh: {
-        title: 'Lector del Tanaj',
-        desc: 'Lee la Biblia hebrea completa en hebreo (con nikud), inglés (JPS 1917) y español. Accedé al comentario de Rashi versículo a versículo.',
+        title: 'Tanaj',
+        desc: 'La Biblia hebrea completa en hebreo (con nikud), inglés (JPS 1917) y español, con el comentario clásico de Rashi en cada libro.',
       },
       mishnah: {
         title: 'Mishná',
-        desc: 'Los 63 tratados completos en hebreo y español, con búsqueda semántica y de texto completo.',
+        desc: 'Los 63 tratados completos en hebreo, español e inglés — incluyendo Pirkei Avot como sección propia destacada.',
       },
       talmud: {
         title: 'Talmud Bavli',
-        desc: '28 tratados del Bavli en arameo y español, con contenido buscable (CC-BY-SA).',
+        desc: 'Los 37 tratados completos del Bavli en hebreo/arameo, español e inglés, con el comentario de Rashi junto al texto.',
       },
-      ai: {
-        title: 'Herramientas con IA',
-        desc: 'Chateá con una IA anclada en el texto, generá quizzes por capítulo y obtené resúmenes al instante — impulsado por GPT-4o.',
+      tosefta: {
+        title: 'Tosefta',
+        desc: '61 tratados de esta obra tannaítica temprana, complementaria a la Mishná, en hebreo.',
       },
-      rashi: {
-        title: 'Comentario de Rashi',
-        desc: 'Accedé al clásico comentario del siglo XI sobre la Torá, disponible en hebreo e inglés.',
+      midrash: {
+        title: 'Midrash y comentarios clásicos',
+        desc: 'Midrash Rabbah, Sifrei, Midrash Tanchuma, Mekhilta y Sifra — siglos de interpretación rabínica, en hebreo.',
+      },
+      prayer: {
+        title: 'Oración y festividades',
+        desc: 'La Hagadá de Pésaj y el Sidur de días de semana, listos para leer y seguir.',
+      },
+      audio: {
+        title: 'Escuchá cada texto',
+        desc: 'Texto a voz en hebreo, español e inglés — reproducí un versículo o un capítulo completo con las manos libres.',
+      },
+      search: {
+        title: 'Buscá en toda la biblioteca',
+        desc: 'Búsqueda de texto completo y semántica en toda la colección — encontrá el pasaje que tenés en mente, aunque no recuerdes las palabras exactas.',
       },
       multilang: {
         title: 'Multilingüe',
         desc: 'Interfaz en español, inglés y hebreo. Textos en sus idiomas originales con traducciones.',
+      },
+      chat: {
+        title: 'Chat con IA',
+        desc: 'Hacé preguntas y chateá con una IA anclada en el texto — cada respuesta cita versículos reales, nunca contenido inventado.',
+      },
+      quiz: {
+        title: 'Quizzes generados automáticamente',
+        desc: 'Poné a prueba tu comprensión con quizzes generados por IA para cualquier capítulo, tratado o daf, con historial guardado de tus resultados.',
+      },
+      summary: {
+        title: 'Resúmenes al instante',
+        desc: 'Obtené un resumen claro generado por IA de cualquier capítulo en segundos.',
+      },
+      guides: {
+        title: 'Guías de estudio personalizadas',
+        desc: 'Elegí cualquier tema y dejá que la IA arme una guía de estudio de varias lecciones fundamentada en fuentes reales — con quiz final y certificado de finalización.',
       },
     },
     principles: {
@@ -293,29 +353,59 @@ const TRANSLATIONS = {
     },
     features: {
       title: 'כל מה שצריך ללימוד',
+      groupLibrary: '📚 הספרייה',
+      groupAI: '🤖 כלי לימוד מבוססי בינה מלאכותית',
       tanakh: {
-        title: 'קורא תנ״ך',
-        desc: 'קרא את התנ״ך השלם בעברית (עם ניקוד), אנגלית (JPS 1917) וספרדית. גישה לפירוש רש״י פסוק אחר פסוק.',
+        title: 'תנ״ך',
+        desc: 'התנ״ך השלם בעברית (עם ניקוד), אנגלית (JPS 1917) וספרדית, עם פירוש רש״י הקלאסי על כל ספר.',
       },
       mishnah: {
         title: 'משנה',
-        desc: 'כל 63 המסכתות בעברית ובספרדית, עם חיפוש סמנטי וטקסט מלא.',
+        desc: 'כל 63 המסכתות בעברית, ספרדית ואנגלית — כולל פרקי אבות כקטע מומלץ בפני עצמו.',
       },
       talmud: {
         title: 'תלמוד בבלי',
-        desc: '28 מסכתות מהבבלי בארמית ובספרדית, עם תוכן ניתן לחיפוש (CC-BY-SA).',
+        desc: 'כל 37 מסכתות הבבלי, שלמות בעברית/ארמית, ספרדית ואנגלית, עם פירוש רש״י לצד הטקסט.',
       },
-      ai: {
-        title: 'כלי בינה מלאכותית',
-        desc: 'שוחח עם בינה מלאכותית המבוססת על הטקסט, צור חידונים לפי פרק וקבל סיכומים מיידיים — מופעל על ידי GPT-4o.',
+      tosefta: {
+        title: 'תוספתא',
+        desc: '61 מסכתות של חיבור תנאי מוקדם זה, המשלים את המשנה, בעברית.',
       },
-      rashi: {
-        title: 'פירוש רש״י',
-        desc: 'גישה לפירוש הקלאסי של רש״י על התורה, זמין בעברית ובאנגלית.',
+      midrash: {
+        title: 'מדרש ופרשנות קלאסית',
+        desc: 'מדרש רבה, ספרי, מדרש תנחומא, מכילתא וספרא — מאות שנות פרשנות רבנית, בעברית.',
+      },
+      prayer: {
+        title: 'תפילה וחגים',
+        desc: 'הגדה של פסח וסידור לימי חול, מוכנים לקריאה ולמעקב.',
+      },
+      audio: {
+        title: 'האזן לכל טקסט',
+        desc: 'טקסט לדיבור בעברית, ספרדית ואנגלית — הפעל פסוק בודד או פרק שלם בלי להשתמש בידיים.',
+      },
+      search: {
+        title: 'חפש בכל הספרייה',
+        desc: 'חיפוש טקסט מלא וסמנטי בכל האוסף — מצא את הקטע שאתה חושב עליו, גם אם אינך זוכר את המילים המדויקות.',
       },
       multilang: {
         title: 'רב-לשוני',
         desc: 'ממשק בספרדית, אנגלית ועברית. טקסטים בשפות המקוריות שלהם עם תרגומים.',
+      },
+      chat: {
+        title: 'צ׳אט עם בינה מלאכותית',
+        desc: 'שאל שאלות ושוחח עם בינה מלאכותית המבוססת על הטקסט — כל תשובה מצטטת פסוקים אמיתיים, לעולם לא תוכן מומצא.',
+      },
+      quiz: {
+        title: 'חידונים אוטומטיים',
+        desc: 'בחן את ההבנה שלך עם חידונים שנוצרו על ידי בינה מלאכותית לכל פרק, מסכת או דף, עם היסטוריה שמורה של התוצאות שלך.',
+      },
+      summary: {
+        title: 'סיכומים מיידיים',
+        desc: 'קבל סיכום ברור שנוצר על ידי בינה מלאכותית לכל פרק תוך שניות.',
+      },
+      guides: {
+        title: 'מדריכי לימוד מותאמים אישית',
+        desc: 'בחר כל נושא ותן לבינה המלאכותית לבנות מדריך לימוד רב-שיעורי המבוסס על מקורות אמיתיים — כולל חידון מסכם ותעודת סיום.',
       },
     },
     principles: {

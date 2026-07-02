@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tora Study</title>
-  <meta name="description" content="Study Torah, Mishnah and Talmud with AI-powered tools. Sacred texts, multilingual, in your pocket." />
+  <meta name="description" content="Study Tanakh, Mishnah, Talmud, Tosefta and Midrash with AI-powered tools. Sacred texts, multilingual, in your pocket." />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✡</text></svg>" />
 </head>
@@ -39,57 +39,127 @@
   <section class="section">
     <div class="container">
       <h2 class="section__title" data-i18n="features.title">Everything you need to study</h2>
-      <div class="features-grid">
 
-        <div class="feature-card">
-          <span class="feature-card__icon">📖</span>
-          <h3 class="feature-card__title" data-i18n="features.tanakh.title">Tanakh Reader</h3>
-          <p class="feature-card__desc" data-i18n="features.tanakh.desc">
-            Read the complete Hebrew Bible in Hebrew (with nikud), English (JPS 1917) and Spanish. Access Rashi commentary verse by verse.
-          </p>
+      <!-- The Library -->
+      <div class="features-group">
+        <h3 class="features-group__title" data-i18n="features.groupLibrary">📚 The Library</h3>
+        <div class="features-grid">
+
+          <div class="feature-card">
+            <span class="feature-card__icon">📖</span>
+            <h3 class="feature-card__title" data-i18n="features.tanakh.title">Tanakh</h3>
+            <p class="feature-card__desc" data-i18n="features.tanakh.desc">
+              The complete Hebrew Bible in Hebrew (with nikud), English (JPS 1917) and Spanish, with Rashi's classic commentary on every book.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-card__icon">📜</span>
+            <h3 class="feature-card__title" data-i18n="features.mishnah.title">Mishnah</h3>
+            <p class="feature-card__desc" data-i18n="features.mishnah.desc">
+              All 63 tractates in Hebrew, Spanish and English — including Pirkei Avot as its own featured section.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-card__icon">🕯️</span>
+            <h3 class="feature-card__title" data-i18n="features.talmud.title">Babylonian Talmud</h3>
+            <p class="feature-card__desc" data-i18n="features.talmud.desc">
+              All 37 tractates of the Bavli, complete in Hebrew/Aramaic, Spanish and English, with Rashi's commentary alongside the text.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-card__icon">🗂️</span>
+            <h3 class="feature-card__title" data-i18n="features.tosefta.title">Tosefta</h3>
+            <p class="feature-card__desc" data-i18n="features.tosefta.desc">
+              61 tractates of this early tannaitic companion to the Mishnah, in Hebrew.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-card__icon">✒️</span>
+            <h3 class="feature-card__title" data-i18n="features.midrash.title">Midrash &amp; Classic Commentaries</h3>
+            <p class="feature-card__desc" data-i18n="features.midrash.desc">
+              Midrash Rabbah, Sifrei, Midrash Tanchuma, Mekhilta and Sifra — centuries of rabbinic interpretation, in Hebrew.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-card__icon">🍷</span>
+            <h3 class="feature-card__title" data-i18n="features.prayer.title">Prayer &amp; Holidays</h3>
+            <p class="feature-card__desc" data-i18n="features.prayer.desc">
+              The Passover Haggadah and the weekday Siddur, ready to read and follow along.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-card__icon">🔊</span>
+            <h3 class="feature-card__title" data-i18n="features.audio.title">Listen to Every Text</h3>
+            <p class="feature-card__desc" data-i18n="features.audio.desc">
+              Text-to-speech in Hebrew, Spanish and English — play a single verse or an entire chapter hands-free.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-card__icon">🔎</span>
+            <h3 class="feature-card__title" data-i18n="features.search.title">Search the Whole Library</h3>
+            <p class="feature-card__desc" data-i18n="features.search.desc">
+              Full-text and semantic search across the entire collection — find the passage you're thinking of, even if you don't remember the exact words.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-card__icon">🌍</span>
+            <h3 class="feature-card__title" data-i18n="features.multilang.title">Multilingual</h3>
+            <p class="feature-card__desc" data-i18n="features.multilang.desc">
+              Interface available in Spanish, English and Hebrew. Texts in their original languages with translations.
+            </p>
+          </div>
+
         </div>
-
-        <div class="feature-card">
-          <span class="feature-card__icon">📜</span>
-          <h3 class="feature-card__title" data-i18n="features.mishnah.title">Mishnah</h3>
-          <p class="feature-card__desc" data-i18n="features.mishnah.desc">
-            All 63 tractates in Hebrew and Spanish, with full-text and semantic search.
-          </p>
-        </div>
-
-        <div class="feature-card">
-          <span class="feature-card__icon">🕯️</span>
-          <h3 class="feature-card__title" data-i18n="features.talmud.title">Babylonian Talmud</h3>
-          <p class="feature-card__desc" data-i18n="features.talmud.desc">
-            28 tractates of the Bavli in Aramaic and Spanish, with searchable content (CC-BY-SA).
-          </p>
-        </div>
-
-        <div class="feature-card">
-          <span class="feature-card__icon">🤖</span>
-          <h3 class="feature-card__title" data-i18n="features.ai.title">AI Study Tools</h3>
-          <p class="feature-card__desc" data-i18n="features.ai.desc">
-            Chat with an AI grounded in the text, generate chapter quizzes, and get instant summaries — powered by GPT-4o.
-          </p>
-        </div>
-
-        <div class="feature-card">
-          <span class="feature-card__icon">✍️</span>
-          <h3 class="feature-card__title" data-i18n="features.rashi.title">Rashi Commentary</h3>
-          <p class="feature-card__desc" data-i18n="features.rashi.desc">
-            Access the classic 11th-century commentary on the Torah, available in Hebrew and English.
-          </p>
-        </div>
-
-        <div class="feature-card">
-          <span class="feature-card__icon">🌍</span>
-          <h3 class="feature-card__title" data-i18n="features.multilang.title">Multilingual</h3>
-          <p class="feature-card__desc" data-i18n="features.multilang.desc">
-            Interface available in Spanish, English and Hebrew. Texts in their original languages with translations.
-          </p>
-        </div>
-
       </div>
+
+      <!-- AI-Powered Study Tools -->
+      <div class="features-group">
+        <h3 class="features-group__title" data-i18n="features.groupAI">🤖 AI-Powered Study Tools</h3>
+        <div class="features-grid">
+
+          <div class="feature-card">
+            <span class="feature-card__icon">💬</span>
+            <h3 class="feature-card__title" data-i18n="features.chat.title">AI Chat</h3>
+            <p class="feature-card__desc" data-i18n="features.chat.desc">
+              Ask questions and chat with an AI grounded in the text — every answer cites real verses, never invented content.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-card__icon">❓</span>
+            <h3 class="feature-card__title" data-i18n="features.quiz.title">Auto-Generated Quizzes</h3>
+            <p class="feature-card__desc" data-i18n="features.quiz.desc">
+              Test your understanding with AI-generated quizzes for any chapter, tractate or daf, with a saved history of your results.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-card__icon">⚡</span>
+            <h3 class="feature-card__title" data-i18n="features.summary.title">Instant Summaries</h3>
+            <p class="feature-card__desc" data-i18n="features.summary.desc">
+              Get a clear AI-generated summary of any chapter in seconds.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-card__icon">🎓</span>
+            <h3 class="feature-card__title" data-i18n="features.guides.title">Personalized Study Guides</h3>
+            <p class="feature-card__desc" data-i18n="features.guides.desc">
+              Pick any topic and let AI build a multi-lesson study guide grounded in real sources — complete with a final quiz and certificate of completion.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </section>
 
